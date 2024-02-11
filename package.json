@@ -1,0 +1,52 @@
+{
+  "name": "nelly-portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node server",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "vite build --ssrManifest --outDir dist/client",
+    "build:server": "vite build --ssr src/entry-server.tsx --outDir dist/server",
+    "preview": "cross-env NODE_ENV=production node server"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@mantine/core": "6",
+    "@mantine/dropzone": "6",
+    "@mantine/form": "6",
+    "@mantine/hooks": "6",
+    "@mantine/modals": "6",
+    "@mantine/notifications": "6",
+    "@mantine/nprogress": "6",
+    "@mantine/prism": "6",
+    "@mantine/spotlight": "6",
+    "@mantine/tiptap": "6",
+    "@tabler/icons-react": "^2.47.0",
+    "@tiptap/extension-link": "^2.2.2",
+    "@tiptap/react": "^2.2.2",
+    "@tiptap/starter-kit": "^2.2.2",
+    "compression": "^1.7.4",
+    "dayjs": "^2.0.0-alpha.4",
+    "embla-carousel-react": "6",
+    "express": "^4.18.2",
+    "postcss-preset-mantine": "^1.13.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recharts": "2",
+    "sirv": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "autoprefixer": "^10.4.17",
+    "cross-env": "^7.0.3",
+    "postcss": "^8.4.34",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10"
+  }
+}

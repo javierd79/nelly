@@ -1,0 +1,172 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 900px;
+  gap: 20px;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+
+.container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+
+#root {
+  height: 100vh;
+  background-color: #E5D4FF;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  10% {
+    opacity: 0.1;
+  }
+
+  20% {
+    opacity: 0.2;
+  }
+
+  30% {
+    opacity: 0.3;
+  }
+
+  40% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  90% {
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  20% {
+    opacity: 0.8;
+  }
+
+  30% {
+    opacity: 0.7;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 0.4;
+  }
+
+  70% {
+    opacity: 0.3;
+  }
+
+  80% {
+    opacity: 0.2;
+  }
+
+  90% {
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.maxHeight {
+  height: 100vh;
+}
+
+.first-section {
+  height: calc(100vh - 80px);
+  background-color: #E5D4FF;
+}
+
+.first-sectionn {
+  height: 100vh;
+  background-color: hotpink;
+}
+
+.first-sectionnn {
+  height: 100vh;
+  background-color: #D24545;
+}
+
+.first-sectionnnnn {
+  height: 100vh;
+  background-color: #F5F7F8;
+}
+
+.first-sectionnnnnn {
+  height: 100vh;
+  background-color: #F8E559;
+}
+
